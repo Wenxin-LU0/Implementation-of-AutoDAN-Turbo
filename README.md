@@ -24,13 +24,13 @@ cd ..
 
 
 
-1.3 Download my new code:
+### 1.3 Download my new code:
 
 ```
 git clone https://github.com/Wenxin-LU0/Implementation-of-AutoDAN-Turbo.git
 ```
 
-**1.4 Replace original code:**
+### 1.4 Replace original code:
 
  I modified some code, so this requires to remove the original code first and then download the new code to replace it.
 
@@ -47,7 +47,7 @@ mv -f Implementation-of-AutoDAN-Turbo/data .
 rm -rf Implementation-of-AutoDAN-Turbo
 ```
 
-**1.5 Manually replace code:**
+### 1.5 Manually replace code:
 
 Due to the presence of API keys, this file cannot be uploaded to GitHub. The source code needs to be modified manually. (Since my environment has been updated with the newer versions of vllm and OpenAI, which are incompatible with the older OpenAI functions, I've made the necessary modifications). My apologies for the extra work this has generated, thank you for your support.
 
