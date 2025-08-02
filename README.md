@@ -6,13 +6,13 @@
 
 1.1 Download original code from: https://github.com/SaFoLab-WISC/AutoDAN-Turbo
 
-```
+```shell
 git clone https://github.com/SaFoLab-WISC/AutoDAN-Turbo.git
 ```
 
 1.2 Download LLM Chat Templates\:
 
-```
+```shell
 cd AutoDAN-Turbo
 cd llm
 git clone https://github.com/chujiezheng/chat_templates.git
@@ -26,7 +26,7 @@ cd ..
 
 ### 1.3 Download my new code:
 
-```
+```shell
 git clone https://github.com/Wenxin-LU0/Implementation-of-AutoDAN-Turbo.git
 ```
 
@@ -39,7 +39,7 @@ Specifically, the files that need to be changed are as follows: \
 -- ./AutoDAN-Turbo/test_r.py \
 -- ./AutoDAN-Turbo/llm/openai_models.py
 
-```
+```shell
 rm -rf data
 rm -f test_r.py
 mv -f Implementation-of-AutoDAN-Turbo/test_r.py .
@@ -53,7 +53,7 @@ Due to the presence of API keys, this file cannot be uploaded to GitHub. The sou
 
 **File Directory:** `AutoDAN-Turbo/llm/openai_models.py`
 
-```
+```py
 import openai
 import logging
 from openai import AzureOpenAI
@@ -135,7 +135,7 @@ class OpenAIEmbeddingModel:
 
 ### 2.1 Create an environment:
 
-```
+```shell
 cd AutoDAN-Turbo
 conda create -n autodanturbo python==3.12
 conda activate autodanturbo
@@ -145,7 +145,7 @@ conda activate autodanturbo
 
 Even after downloading the original requirements, some packages were still missing, so my requirements are as follows:
 
-```
+```shell
 pip install vllm==0.10.0
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple faiss-cpu
 pip install numpy==2.3.2
@@ -182,7 +182,7 @@ pip install wandb
 
 ### 3.1 Open venv:
 
-```
+```shell
 conda init
 conda activate autodanturbo
 cd AutoDAN-Turbo
@@ -197,7 +197,7 @@ cd AutoDAN-Turbo
 --deepseek_model "deepseek-reasoner" \
 --epochs 150"
 
-```
+```shell
 python test_r.py --openai_api_key "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" \
                  --embedding_model "text-embedding-ada-002" \
                  --hf_token "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" \
@@ -205,6 +205,7 @@ python test_r.py --openai_api_key "sk-svcacct-9TmpZH5UvomZvLOIhWGL-z7dT33cQNt9xH
                  --deepseek_model "deepseek-reasoner" \
                  --epochs 150
 ```
+
 
 
 
