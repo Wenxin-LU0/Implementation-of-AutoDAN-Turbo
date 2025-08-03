@@ -112,7 +112,7 @@ class OpenAIEmbeddingModel:
                 
                 client = OpenAI(
                     base_url='https://xiaoai.plus/v1',
-                    api_key='sk-w2B1l365N5CSxzBTF8jD11vzRMohXAF5llzMZzYctVULnju5')
+                    api_key='') # put your openai api here
                 response = client.embeddings.create(
                     input=text,
                     model="text-embedding-ada-002",
@@ -198,10 +198,10 @@ cd AutoDAN-Turbo
 --epochs 150"
 
 ```shell
-python test_r.py --openai_api_key "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" \
+python test_r.py --openai_api_key "" \
                  --embedding_model "text-embedding-ada-002" \
-                 --hf_token "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" \
-                 --deepseek_api_key "sk-31d1038e16194747aa84ddee36bd994c" \
+                 --hf_token "" \
+                 --deepseek_api_key "" \
                  --deepseek_model "deepseek-reasoner" \
                  --epochs 150
 ```
