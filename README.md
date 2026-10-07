@@ -211,7 +211,5 @@ python test_r.py --openai_api_key "" \
 
 Each prompt requires 150 epochs, and running 100 prompts may take several days to complete. See `/AutoDAN-Turbo/data/AutoDAN-Turbo_JailbreakBench.json` for the results.
 
-Thank you again for your help :)
-
 
 
